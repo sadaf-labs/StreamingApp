@@ -10,3 +10,19 @@ export function register() {
     });
   }
 }
+
+export function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then((registration) => {
+      registration.unregister().then((success) => {
+        if (success) {
+          console.log('Service worker unregistered successfully');
+        } else {
+          console.warn('Service Worker unregistration failed');
+        }
+      }).catch((error) => {
+        console.error('Service Worker unregistration failed: ', error);
+      });
+    });
+  }
+}
