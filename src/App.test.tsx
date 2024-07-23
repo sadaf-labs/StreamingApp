@@ -1,9 +1,13 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import App from './App';
+import Home from './pages/Home';
 
-test('renders learn react link', () => {
+jest.mock('./pages/Home', () => () => <div>Mock Home Component</div>);
+
+test('renders the Home component within App', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  
+  expect(screen.getByText(/Mock Home Component/i)).toBeInTheDocument();
 });
