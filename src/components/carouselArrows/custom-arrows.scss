@@ -1,0 +1,51 @@
+.custom-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+
+  &.left-arrow,
+  &.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.left-arrow {
+    left: 10px;
+  }
+
+  &.right-arrow {
+    right: 10px;
+  }
+
+  &.up-arrow,
+  &.down-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.up-arrow {
+    top: 10px;
+  }
+
+  &.down-arrow {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 748px) {
+  .custom-arrow {
+    padding: 5px;
+    font-size: 16px;
+
+    &.up-arrow,
+    &.down-arrow {
+      display: block;
+    }
+  }
+}
