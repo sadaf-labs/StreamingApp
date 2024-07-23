@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Nav } from 'react-bootstrap';
 import './side-bar.scss';
+import { COMPANY_LOGO_URL } from '../../utils/constant';
 
 const Sidebar: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -28,7 +29,7 @@ const Sidebar: React.FC = () => {
       onClick={handleSidebarClick}
     >
       <div className="sidebar-header">
-        <img src={'/company-logo.png'} alt="logo" className="sidebar-logo" />
+        <img src={COMPANY_LOGO_URL} alt="logo" className="sidebar-logo" />
       </div>
       <Nav className="flex-column">
         <Nav.Item>
