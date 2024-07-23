@@ -2,14 +2,12 @@
 
 [![Application Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/captainsadaf/StreamingApp/)
 
-A React-based streaming application developed using TypeScript and ReactJS.
+Web streaming application developed using TypeScript and ReactJS.
 
 ## Features
 
-- **Hero Banner:** Prominent display of featured content.
 - **Media Carousels:** Auto scrolling and hover previews.
-- **Video Modal:** Engaging video playback.
-- **Responsive Design:** Mobile first approach using Bootstrap.
+- **Responsive Design:** Mobile first approach using Bootstrap design.
 
 ## Technologies Used
 
@@ -41,9 +39,5 @@ To set up the development environment, follow these steps:
 
 A live version of the app is available at [Streaming App](https://captainsadaf.github.io/StreamingApp/).
 
-
-## Contact
-
-For any inquiries, feel free to contact the repository owner.
 
 ---
