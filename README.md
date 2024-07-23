@@ -1,2 +1,2 @@
 # StreamingApp
-Live streaming
+Live streaming app
