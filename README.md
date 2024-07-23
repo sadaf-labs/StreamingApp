@@ -1,9 +1,49 @@
-# StreamingApp
-Live streaming app
+# Streaming App
 
-## Install and start of application
+[![Application Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/captainsadaf/StreamingApp/)
 
-In the project directory, you can run:
-### `npm install`
-### `npm run serve`
+A React-based streaming application developed using TypeScript and ReactJS.
 
+## Features
+
+- **Hero Banner:** Prominent display of featured content.
+- **Media Carousels:** Auto scrolling and hover previews.
+- **Video Modal:** Engaging video playback.
+- **Responsive Design:** Mobile first approach using Bootstrap.
+
+## Technologies Used
+
+- **ReactJS**
+- **TypeScript**
+- **Sass**
+
+## Development Setup
+
+To set up the development environment, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/captainsadaf/StreamingApp.git
+    cd StreamingApp
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm run serve
+    ```
+
+## Deployment
+
+A live version of the app is available at [Streaming App](https://captainsadaf.github.io/StreamingApp/).
+
+
+## Contact
+
+For any inquiries, feel free to contact the repository owner.
+
+---
