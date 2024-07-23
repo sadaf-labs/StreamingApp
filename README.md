@@ -12,4 +12,3 @@ In the project directory, you can run:
 
 https://CaptainSadaf.github.io/StreamingApp
 
-![Uploading image.png…]()
