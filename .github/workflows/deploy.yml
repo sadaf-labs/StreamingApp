@@ -28,8 +28,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Set up Git configuration
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@github.com'
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./build
