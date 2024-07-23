@@ -1,0 +1,26 @@
+.media-list-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+
+  &_react-multi-carousel-item {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  &_media-item-wrapper {
+    height: 100%;
+    padding: 5px;
+    width: calc(100% - 20px);
+  }
+
+}

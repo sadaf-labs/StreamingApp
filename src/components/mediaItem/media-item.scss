@@ -1,0 +1,74 @@
+.media-item {
+  position: relative;
+
+  .media-item-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+
+    .new-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e50914;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .media-item-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+  }
+
+  .new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e50914;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &:hover .media-item-overlay {
+    display: block;
+  }
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    padding: 5px;
+  }
+}
