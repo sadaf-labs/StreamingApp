@@ -1,4 +1,4 @@
-# Streaming App
+# [Streaming App](https://captainsadaf.github.io/StreamingApp/)
 
 [![Application Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/captainsadaf/StreamingApp/)
 
@@ -6,7 +6,6 @@ Web streaming application developed using TypeScript and ReactJS.
 
 ## Features
 
-- **Media Carousels:** Auto scrolling and hover previews.
 - **Responsive Design:** Mobile first approach using Bootstrap design.
 
 ## Technologies Used
