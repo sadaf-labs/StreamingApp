@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "http://CaptainSadaf.github.io/StreamingApp",
+  "homepage": "https://CaptainSadaf.github.io/StreamingApp",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
