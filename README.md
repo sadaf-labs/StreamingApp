@@ -4,10 +4,6 @@
 
 Web streaming application developed using TypeScript and ReactJS.
 
-## Features
-
-- **Responsive Design:** Mobile first approach using Bootstrap design.
-
 ## Technologies Used
 
 - **ReactJS**
