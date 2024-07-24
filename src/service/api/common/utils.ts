@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { IApiResponseData } from './media-api-interface';
+import { IApiResponseData } from './common.interface';
 
 
 

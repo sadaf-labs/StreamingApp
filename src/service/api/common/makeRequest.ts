@@ -1,6 +1,6 @@
 import Axios, { AxiosRequestConfig, Method } from "axios";
 import { decodeResponse } from "./utils";
-import { IRequestOptions } from "./media-api-interface";
+import { IRequestOptions } from "./common.interface";
 
 
 export const makeRequest = (api: string, options: IRequestOptions): Promise<any> => {

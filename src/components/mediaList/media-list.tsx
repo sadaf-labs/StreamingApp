@@ -3,11 +3,16 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MediaItem from '../mediaItem/media-item';
 import './media-list.scss';
-import { fetchMediaCollection } from '../../service/api/media-api';
 import { responsive } from './media-list.helper';
 import { labels } from '../../utils/constant';
 import { CustomLeftArrow, CustomRightArrow } from '../carouselArrows/customArrows';
 import { IMedia } from './media-list.interface';
+import { container } from '../../service/api/media/media-container';
+import { IMediaProvider } from '../../service/api/media/media-interface';
+import { TYPES } from '../../service/api/media/types';
+
+const apiMediaCollectionProvider = container.getNamed<IMediaProvider>(TYPES.MediaProvider, 'api');
+const jsonMediaCollectionProvider = container.getNamed<IMediaProvider>(TYPES.MediaProvider, 'json');
 
 
 const MediaList: React.FC = () => {
@@ -18,12 +23,17 @@ const MediaList: React.FC = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const mediaCollection = await fetchMediaCollection();
+        const mediaCollection = await apiMediaCollectionProvider.fetchMedia();
         setMediaCollection(mediaCollection);
       } catch (err) {
-        setError(labels.FAILED_TO_FETCH_ITEMS);
-        alert(err);
-        console.error('Error in fetchMediaCollection', err);
+        try {
+          const mediaCollection = await jsonMediaCollectionProvider.fetchMedia();
+          setMediaCollection(mediaCollection);
+        }
+        catch (err) {
+          console.error('Error in fetchMediaCollection', err);
+          setError(labels.FAILED_TO_FETCH_ITEMS)
+        }
       } finally {
         setLoading(false);
       }

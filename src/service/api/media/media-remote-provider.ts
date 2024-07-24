@@ -1,6 +1,6 @@
 import { Method } from 'axios';
-import { makeRequest } from './makeRequest';
-import { MEDIA_API } from '../../utils/constant';
+import { makeRequest } from '../common/makeRequest';
+import { MEDIA_API } from '../../../utils/constant';
 
 
 export const fetchMediaCollection = async () => {
