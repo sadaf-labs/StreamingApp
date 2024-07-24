@@ -22,5 +22,15 @@
     padding: 5px;
     width: calc(100% - 20px);
   }
-
 }
+
+@media (max-width: 768px) {
+  .media-list-container {
+    margin-bottom: 10px;
+
+    &_media-item-wrapper {
+      width: calc(100% - 10px);
+    }
+  }
+}
+

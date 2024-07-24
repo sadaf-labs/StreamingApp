@@ -22,6 +22,8 @@ const MediaList: React.FC = () => {
         setMediaCollection(mediaCollection);
       } catch (err) {
         setError(labels.FAILED_TO_FETCH_ITEMS);
+        alert(err);
+        console.error('Error in fetchMediaCollection', err);
       } finally {
         setLoading(false);
       }

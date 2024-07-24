@@ -14,9 +14,6 @@
   align-items: center;
   padding-top: 10px;
 
-
-
-
   .sidebar-header {
     display: flex;
     flex-direction: column;
@@ -105,5 +102,28 @@
         display: inline;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50px;
+
+    &.expanded {
+      width: 100%;
+    }
+
+    .toggle-btn {
+      right: 0;
+      top: 10px;
+    }
+  }
+
+  .sidebar-header .sidebar-company-name {
+    display: none;
+  }
+
+  .sidebar-item span {
+    display: none;
   }
 }
